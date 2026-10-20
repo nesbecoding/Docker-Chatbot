@@ -1,0 +1,21 @@
+﻿question;expected
+What is Docker?;Docker is an open platform for developing, shipping, and running applications.
+What is a container image?;A container image is a standardized package that includes all of the files, binaries, libraries, and configurations to run a container.
+What is the difference between a container and an image?;A container is a runnable instance of an image.
+Why do we tag an image?;Tagging images is the method to provide an image with a memorable name.
+How do you tag an image during a build?;To tag an image during a build, add the -t or --tag flag: docker build -t my-username/my-image .
+How do you tag an image that is already built?;If you've already built an image, you can add another tag to the image by using the docker image tag command: docker image tag my-username/my-image another-username/another-image:v1
+What do you do once an image is built and tagged and you are ready to push it to a registry?;Once you have an image built and tagged, you're ready to push it to a registry. To do so, use the docker push command: docker push my-username/my-image
+What do publishing ports provide?;Publishing a port provides the ability to break through a little bit of networking isolation by setting up a forwarding rule.
+What is the host port?;The port number on your host machine where you want to receive traffic.
+What is the container port?;The port number within the container that's listening for connections.
+What is Docker Hub?;Docker Hub is a public registry that anyone can use, and Docker looks for images on Docker Hub by default.
+What is an image registry?;A registry is a centralized location that stores and manages container images.
+What does an image layer contain ?;Each layer in an image contains a set of filesystem changes - additions, deletions, or modifications.
+How to view the layers of an image ?;View the layers of your image using the `docker image history` command:     $ docker image history node-base
+Can you use multiple docker run commands to start multiple containers;You can use multiple `docker run` commands to start multiple containers. But, you'll soon realize you'll need to manage networks, all of the flags needed to connect containers to those networks, and more.
+What does the global interpreter lock do in Python?;I don't have enough data
+How do decorators work in Python?;I don't have enough data
+How does simulated annealing decide whether to accept a worse solution?;I don't have enough data
+What is the difference between a genetic algorithm and particle swarm optimization?;I don't have enough data
+What is a tabu list in tabu search;I don't have enough data

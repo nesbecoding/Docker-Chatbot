@@ -1,0 +1,11 @@
+pandas
+ollama
+numpy
+transformers
+sentence_transformers
+scikit-learn
+python-dotenv
+langchain-text-splitters
+faiss-cpu
+requests
+bert_score
