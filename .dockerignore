@@ -1,0 +1,9 @@
+.venv
+.env
+results
+results.xlsx
+*.ipynb
+q&a
+n8n
+images
+**/__pycache__
