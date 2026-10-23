@@ -92,6 +92,19 @@ bert_score
 
 results/bilan.csv was used to manually grade the results, full results are in results.xlsx
 
+## Run the API with Docker
+
+Requirements : Docker Desktop and Ollama running with the models "llama3.2" and "nomic-embed-text" pulled.
+
+```text
+docker build -t docker-qa-api .
+docker run --rm -p 8000:8000 -e OLLAMA_HOST=http://host.docker.internal:11434 docker-qa-api
+```
+
+Wait a little then open http://127.0.0.1:8000/docs and use 'GET /return_answer' with a question and a session id. each session id has its own memory.
+
+Note : the results above come from the notebooks, not from this API, which reuses the same pipeline.
+
 ## Project structure
 
 ```text
@@ -104,5 +117,8 @@ chatbot.ipynb
 evaluation.ipynb
 results.xlsx graded results
 requirements.txt
+app/ FastAPI version of the python pipeline
+Dockerfile
+.dockerignore
 .env.example
 ```
