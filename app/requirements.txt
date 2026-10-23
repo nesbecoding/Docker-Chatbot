@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+ollama
+numpy
+faiss_cpu
+langchain-text-splitters
